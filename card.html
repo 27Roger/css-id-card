@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>ID Card</title>
-    
-    <link rel="stylesheet" type="text/css" href="card.css">
-  </head>
-  <body>
-  
-  </body>
+<head>
+	<title>ID Card</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+     <script src="js/bootstrap.min.js"></script>
+     <style>
+     h1,h2{
+     	font-family: impact; 
+     	color: darkblue; 
+     	background-color: skyblue;
+     	text-align: center;
+     }
+     h2{
+     	font-family: times;
+     	color: white;
+     }
+	.vertical {
+    position: absolute;
+    background-color: darkblue;
+    color: white;
+    padding: 1px;
+    right:0px;
+    -webkit-transform: rotate(-90deg);
+    transform-origin: 100% 100%;  /* Saf3.1+, Chrome */
+    text-align: center;
+    font-size: 75px;
+} 
+	p{
+		margin-left-spacing: 50px
+	}
+
+	.Field{
+		color: black
+	}
+
+	.data{
+		position: absolute;
+    	top: 350px;
+    	left: 16px;
+    	font-size: 18px;
+	}
+
+	.logo{
+		width: 170px;
+		height: 170px;
+		margin-left: -500;
+		margin-top: 50;
+		position: absolute;
+	}
+	.student{
+		width: 170px;
+		height: 170px;
+		border: 5px solid black;
+		float:left;
+		margin: 10px;
+	}
+	.sign{
+		float: right;
+	}
+
+     </style>
+</head>
+<body>
+<div class="container-fluid text-center">
+	<div class="vertical" style="height: 150px; width: 1000px">STUDENT</div>
+	<img class="logo" src="logo.jpg" alt="logo">
+
+       <h1><b>AGNEL INSTITUTE OF TECHNOLOGY <br>AND DESIGN</b></h1>
+       <h2>Agnel Technical Education Complex<br>Assagao, Bardez - Goa. 403507<br>
+       	Tel. No.:1234567<br>Web:www.aitdgoa.edu.in</h2>
+
+        <div class="row text-left">
+        <img src="aitd.jpg" alt="aitd" style="width:100%;height:auto; opacity:0.1;">
+        
+        <p class="data"style="color: blue"><img class="student" src="std.jpg" alt="facepic">Name:<span class="Field">Cavin Roger Nunes</span><br>Branch: <span class="Field">ECE</span><br>Rollno.:<span class="Field">12345</span><br><br><br><br><br><br><b>Valid Upto: <span class="Field">Sep 2020</span></b><span class="sign"></span></p>
+        </div>
+
+
+</div>
+</body>
 </html>
